@@ -6,16 +6,10 @@ app = Flask(__name__)
 api = Api(app)
 
 class DeadlineListRes(Resource):
-    def get(self):
-        return {
-            'response_type': 'in_channel',
-            'text': 'Deadline is comming',
-        }
-    
     def post(self):
         return {
             'response_type': 'in_channel',
-            'text': 'Deadline is comming (POST)',
+            'text': '`Deadline is comming`',
         }
 
 api.add_resource(DeadlineListRes, '/slack/deadlines')
