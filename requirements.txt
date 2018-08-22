@@ -1,0 +1,24 @@
+# ----------------------
+# Flask
+# ----------------------
+flask
+flask-restful
+Pillow
+
+# ----------------------
+# Testing
+# ----------------------
+mock
+
+
+# ----------------------
+# Production Server
+# ----------------------
+eventlet
+gunicorn
+
+# ----------------------
+# Other
+# ----------------------
+addict
+google-cloud-firestore
