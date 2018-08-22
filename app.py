@@ -11,6 +11,12 @@ class DeadlineListRes(Resource):
             'response_type': 'in_channel',
             'text': 'Deadline is comming',
         }
+    
+    def post(self):
+        return {
+            'response_type': 'in_channel',
+            'text': 'Deadline is comming (POST)',
+        }
 
 api.add_resource(DeadlineListRes, '/slack/deadlines')
 
