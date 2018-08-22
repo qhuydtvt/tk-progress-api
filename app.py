@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource
-from google.cloud import firestore
+from firebase import sprint_message
 
 app = Flask(__name__)
 api = Api(app)
@@ -9,7 +9,7 @@ class DeadlineListRes(Resource):
     def post(self):
         return {
             'response_type': 'in_channel',
-            'text': '`Deadline is comming`',
+            'text': sprint_message(),
         }
 
 api.add_resource(DeadlineListRes, '/slack/deadlines')

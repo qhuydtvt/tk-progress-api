@@ -21,4 +21,4 @@ gunicorn
 # Other
 # ----------------------
 addict
-google-cloud-firestore
+firebase-admin
